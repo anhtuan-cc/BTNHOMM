@@ -144,5 +144,54 @@ img.tintuc{
     text-align: right;
     font-style: italic;
 }
+.tinmoi{
+    margin-top: 10px;
+    text-align: left;
+    font-weight: 700;
+    margin-bottom: 0px;
+    font-weight: 300;
+}
+.tinmoi h1{
+    text-align: center;
+}
+.tinmoi hr {
+    height: 2px;    
+    background-color: #29AE8D;
+    margin-bottom: 10px;
+}
+.tinmoi a, .tinmoi li{
+    text-decoration: none;
+    color: black;
+    list-style: none;
+    font-size: 18px;
+}
+.tinmoi a:hover{
+    color: #0099ff;
+}
+.footer{
+    font-size: 20px;
+}
+.footer h3{
+    margin-top: 0px;
+    font-size: 30px;
+}
+.footer li{
+    list-style: none;
+    margin-left: 5xp;    
+}
+.footer a{
+    text-decoration: none;
+    color: black;
+}
+.footer a:hover{
+    color: #0099ff;
+}
+.footer p{
+    margin-bottom: -3px;
+}
+.img{
+    height: 200px;
+    margin-bottom: -20px;
+}
 
 
