@@ -1,7 +1,7 @@
 * {
-     margin: 0;
-     padding: 0;
- }
+    margin: 0;
+    padding: 0;
+}
 img {
     width: 100%;
 }
@@ -9,53 +9,34 @@ img {
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
-    background-image: url("https://media.istockphoto.com/photos/teal-and-white-dog-paw-prints-and-bones-repeat-background-picture-id489871214?k=6&m=489871214&s=612x612&w=0&h=zyML-KXNmN7QVIacEOApwfw3OvObchvMtTHuUAtJwp4=");
 }
-
-
-header {
-    margin-top: 70px;
+.title{
+    background-image: linear-gradient(90deg, #316a0e, #3FBC7C);
+    border-radius: 10px;
+    height: 50px;
 }
-
-header .tab {
-    background-image: linear-gradient(90deg, rgb(149, 241, 57), rgb(14, 158, 163));
-    height: 70px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100000;
-}
-
-header .tab .right {
-    margin-top: 15px;
-}
-
-header .tab .left h1 {
-    margin-top: 15px;
-    padding-left: 5%;
-}
-
-h1 a {
-    color: azure;
-}
-
-header li {
-    float: left;
-    margin: 10px;
-    list-style: none;
-}
-
-header li a {
-    color: azure;
-}
-
-.status {
-    color: blue;
-    margin-top: 18%;
+.title h1{
+    margin-top: 3px;
     text-align: center;
 }
-
-.status h1,
-.status h3 {
-    font-weight: 700;
+.info{
+    font-size: 14px;
+    color: #bababa;
+    text-align: center;
+}
+.noidung h2 {
+    font-size: 25px;
+    margin-top: 0;
+}
+hr{
+    background-color: black;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    height: 1.5px;
+}
+p.info {
+    font-size: 14px;
+}
+p{
+    font-size: 18px;
 }
