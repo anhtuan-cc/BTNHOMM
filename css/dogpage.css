@@ -1,19 +1,24 @@
-
+#body {
+    background-color: rgba(63, 188, 124, 0.8);
+    font-size: 16px;
+}
                 
                 img {
                     width: 100%;
                 }
-                
+                .pl-16 {
+                    padding-left: 16px;
+                }
+                .pr-16 {
+                    padding-right: 16px;
+                }
 
-                
-                /*header .container {*/
-                /*    height: 600px;*/
-                /*    background-image: url("https://i1.wp.com/pixelstalk.net/wp-content/uploads/2016/06/Siberian-Husky-HD-Backgrounds.jpg");*/
-                /*    background-size: cover;*/
-                /*}*/
-                
                 header {
                     margin-top: 70px;
+                }
+                header .container{
+                    padding-left: 0;
+                    padding-right: 0;
                 }
                 
                 header .tab {
@@ -91,7 +96,7 @@
                     margin-bottom: 20px;
                 }
                 
-                section .item img {
+                section .myItem img {
                     padding-top: 10%;
                 }
                 

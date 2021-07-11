@@ -21,7 +21,7 @@ function header() {
         "\n" +
 
 
-    "<div class=\"header container\">\n" +
+    "<div class=\"header\">\n" +
         "        <div id=\"carousel-example-generic\" class=\"carousel slide\" data-ride=\"carousel\">\n" +
         "            <!-- Indicators -->\n" +
         "            <ol class=\"carousel-indicators data-slide\">\n" +
