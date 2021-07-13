@@ -18,7 +18,7 @@ function header() {
         "                    </div>\n" +
         "                </div>\n" +
         "            </div>\n" +
-        "\n"
+        "\n";
 
 
     document.getElementById("header").innerHTML = header_txt;
