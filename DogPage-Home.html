@@ -9,19 +9,22 @@
     <link rel="stylesheet" href="css/dogpage.css" type="text/css">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https: //fonts.googleapis.com/css2? family = Roboto: wght @ 500 & display = swap " rel=" stylesheet ">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
 
 </head>
 
-<body>
+<body id="body">
     <header class="header" id="header">
 
     </header>
+
     <section class="section">
         <div class="container">
             <div class="contain-1 col-md-12">
@@ -44,7 +47,7 @@
 
                 <div class="row">
                     <div class="selec-tab col-md-6">
-                        <div class="item">
+                        <div class="myItem">
                             <div class="col-md-4">
                                 <img src="images/imagesForHome/DogPage/12.jpg" alt="">
                             </div>
@@ -55,7 +58,7 @@
                         </div>
                     </div>
                     <div class="selec-tab col-md-6">
-                        <div class="item">
+                        <div class="myItem">
                             <div class="col-md-4">
                                 <img src="images/imagesForHome/DogPage/13.jpg" alt="">
                             </div>
@@ -67,7 +70,7 @@
                         </div>
                     </div>
                     <div class="selec-tab col-md-6">
-                        <div class="item">
+                        <div class="myItem">
                             <div class="col-md-4">
                                 <img src="images/imagesForHome/DogPage/14.jpg" alt="">
                             </div>
@@ -79,7 +82,7 @@
                         </div>
                     </div>
                     <div class="selec-tab col-md-6">
-                        <div class="item">
+                        <div class="myItem">
                             <div class="col-md-4">
                                 <img src="images/imagesForHome/DogPage/15.jpg" alt="">
                             </div>
@@ -92,91 +95,78 @@
                     </div>
                 </div>
             </div>
-            <div class="contain-3 col-md-12">
+
+            <div class="contain-3 col-md-12" >
                 <div class="menutab">
                     <h2>Loyal Dogs Go Down In History</h2>
                 </div>
-                <div class="row">
-                    <div class="image col-md-3">
-                        <figure>
-                            <img src="https://baoquocte.vn/stores/news_dataimages/dangtuan/022018/06/14/143550_1.Hachiko.jpg" alt="">
-                            <figcaption>
-                                <p>Hachiko</p>
-                            </figcaption>
-                        </figure>
+                    <div class="row pl-16 pr-16">
+                        <div class="owl-carousel owl-theme">
+                            <div class="item">
+                                <button  type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                                    <img onclick="myMobalBox(this)" src="./images/imagesForHome/143550_1.Hachiko.jpg" alt="">
+                                    <p>Hachiko</p>
+                                </button>
+                            </div>
+                            <div class="item">
+                                <button  type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                                    <img onclick="myMobalBox(this)" src="./images/imagesForHome/143552_2._Boby.jpg" alt="">
+                                    <p>Greyfriars Bobby</p>
+                                </button>
+                            </div>
+                            <div class="item">
+                                <button  type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                                    <img onclick="myMobalBox(this)" src="./images/imagesForHome/143553_3._Leao.jpg" alt="">
+                                    <p>Leão</p>
+                                </button>
+                            </div>
+                            <div class="item">
+                                <button  type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                                    <img onclick="myMobalBox(this)" src="./images/imagesForHome/143555_4.wangchai.ok.jpg" alt="">
+                                    <p>Wangchai</p>
+                                </button>
+                            </div>
+                            <div class="item">
+                                <button  type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                                    <img onclick="myMobalBox(this)" src="./images/imagesForHome/143556_5.Bobbie.jpg" alt="">
+                                    <p>Bobbie</p>
+                                </button>
+                            </div>
+                            <div class="item">
+                                <button  type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                                    <img onclick="myMobalBox(this)" src="./images/imagesForHome/143557_6._Fido.0k.jpg" alt="">
+                                    <p>Fido</p>
+                                </button>
+                            </div>
+                            <div class="item">
+                                <button  type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                                    <img onclick="myMobalBox(this)" src="./images/imagesForHome/143559_7._waghya.jpg" alt="">
+                                    <p>Waghya</p>
+                                </button>
+                            </div>
+                            <div class="item">
+                                <button  type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                                    <img onclick="myMobalBox(this)" src="./images/imagesForHome/143600_8.Chu_cho_cYa_Lao_Pan.jpg" alt="">
+                                    <p>Chú chó của Lao Pan</p>
+                                </button>
+                            </div>
+                            <div class="item">
+                                <button  type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                                    <img onclick="myMobalBox(this)" src="./images/imagesForHome/143602_9._Shep.ok.jpg" alt="">
+                                    <p>Shep</p>
+                                </button>
+                            </div>
+                            <div class="item">
+                                <button  type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                                    <img onclick="myMobalBox(this)" src="./images/imagesForHome/143604_10.hawkeye.ok.jpg" alt="">
+                                    <p>Hawkeye</p>
+                                </button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="image col-md-2">
-                        <figure>
-                            <img src="https://baoquocte.vn/stores/news_dataimages/dangtuan/022018/06/14/143552_2._Boby.jpg" alt="">
-                            <figcaption>
-                                <p>Greyfriars Bobby</p>
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <div class="image col-md-3">
-                        <figure>
-                            <img src="https://baoquocte.vn/stores/news_dataimages/dangtuan/022018/06/14/143553_3._Leao.jpg" alt="">
-                            <figcaption>
-                                <p>Leão.</p>
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <div class="image col-md-2">
-                        <figure>
-                            <img src="https://baoquocte.vn/stores/news_dataimages/dangtuan/022018/06/14/143555_4.wangchai.ok.jpg" alt="">
-                            <figcaption>
-                                <p>Wangchai</p>
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <div class="image col-md-3">
-                        <figure>
-                            <img src="https://baoquocte.vn/stores/news_dataimages/dangtuan/022018/06/14/143556_5.Bobbie.jpg" alt="">
-                            <figcaption>
-                                <p>Bobbie.</p>
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <div class="image col-md-3">
-                        <figure>
-                            <img src="https://baoquocte.vn/stores/news_dataimages/dangtuan/022018/06/14/143557_6._Fido.0k.jpg" alt="">
-                            <figcaption>
-                                <p>Fido</p>
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <div class="image col-md-2" style="margin-top: -50px;">
-                        <figure>
-                            <img src="https://baoquocte.vn/stores/news_dataimages/dangtuan/022018/06/14/143559_7._waghya.jpg" alt="">
-                            <figcaption>
-                                <p>Waghya</p>
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <div class="image col-md-2">
-                        <figure>
-                            <img src="https://baoquocte.vn/stores/news_dataimages/dangtuan/022018/06/14/143600_8.Chu_cho_cYa_Lao_Pan.jpg" alt="">
-                            <figcaption>
-                                <p>Chú chó của Lao Pan</p>
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <div class="image col-md-2">
-                        <figure>
-                            <img src="https://baoquocte.vn/stores/news_dataimages/dangtuan/022018/06/14/143602_9._Shep.ok.jpg" alt="">
-                            <figcaption>
-                                <p>Shep</p>
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <div class="image col-md-3">
-                        <figure>
-                            <img src="https://baoquocte.vn/stores/news_dataimages/dangtuan/022018/06/14/143604_10.hawkeye.ok.jpg" alt="">
-                            <figcaption>
-                                <p>Hawkeye.</p>
-                            </figcaption>
-                        </figure>
-                    </div>
+                <!-- Modal -->
+                <div id="myMobal">
+
                 </div>
             </div>
         </div>
@@ -184,7 +174,32 @@
     <footer id="foodter" class="footer">
 
     </footer>
-<script src="js/headerAndFooter.js" type="text/javascript"></script>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="js/headerAndFooter.js" type="text/javascript"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    <script src="./js/owl.carousel.min.js" type="text/javascript"></script>
+    <script src="js/home-Mobal.js" type="text/javascript"></script>
+    <script >
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:5
+                }
+            }
+        });
+        $('#myModal').on('shown.bs.modal', function () {
+            $('#myInput').focus()
+        });
+    </script>
 </body>
 
 </html>
