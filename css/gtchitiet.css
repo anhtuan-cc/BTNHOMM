@@ -5,7 +5,7 @@
 }
 body{
     background-color: #f5f1f1;
-    font-size: 14px;
+    font-size: 20px;
     font-family: 'Big Shoulders Display', cursive ;
 }
 section .container{
@@ -23,4 +23,11 @@ section .container{
     display: block;
     border-radius: 4%;
     margin: 14px auto;
+}
+.container .Category ul{
+    list-style: none;
+}
+
+.container .Category .content-li{
+    padding: 0 40px;
 }
