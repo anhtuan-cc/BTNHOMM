@@ -2,14 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog</title>
+    <link rel="stylesheet" href="../css/gtchitiet.css" type="text/css">
+    <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/gtchitiet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+
 </head>
-<body>
+
+<body id="body">
+<header class="header">
+    <div id="header"></div>
+    <div class="container" id="header-slides"></div>
+</header>
+
 <section>
     <div class="container">
         <h1 class="title">
@@ -106,5 +121,36 @@
         </div>
     </div>
 </section>
+<footer id="foodter" class="footer">
+
+</footer>
+<script src="../js/jquery-3.6.0.min.js"></script>
+<script src="../js/headerAndFooter.js" type="text/javascript"></script>
+<script src="/js/hearder-slides.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+<script src="./js/owl.carousel.min.js" type="text/javascript"></script>
+<script src="../js/home-Mobal.js" type="text/javascript"></script>
+<script >
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:5
+            }
+        }
+    });
+    $('#myModal').on('shown.bs.modal', function () {
+        $('#myInput').focus()
+    });
+</script>
 </body>
+
 </html>
