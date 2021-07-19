@@ -80,6 +80,7 @@ section {
 }
 .container .title{
     margin: 60px 20px;
+    padding-bottom: 30px;
     font-size: 30px;
     border-bottom: 2px solid #000000;
     text-align: justify;
@@ -89,27 +90,22 @@ section {
     font-weight: bold;
 }
 .container .dog-memu{
-    margin: 20px;
+    margin: 32px 20px;
+    border-bottom: 2px solid #000000;
+    overflow: hidden;
 }
+
 section .container .dog-bg{
-    padding-top: 130px;
     width: 100%;
     height: 600px;
     background-color: #ffffff;
     display: block;
 }
-section .dog-memu product {
-
-}
-.dog-memu{
-    margin-top: 32px;
-    margin-bottom: 32px;
-    font-size: 20px;
-}
 .dog-memu .product{
     float: left;
     width: 33.33333%;
-    padding: 4px 8px;
+    padding: 0px 8px;
+    margin-bottom: 30px;
 }
 .dog-memu .product .dog-list{
     margin-left: 14px;
@@ -135,8 +131,6 @@ section .dog-memu product {
 .dog-img:hover {
     opacity: 0.6;
 }
-.dog-memu .product
-
 * {
     box-sizing: border-box;
 }
