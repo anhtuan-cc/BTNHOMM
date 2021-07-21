@@ -187,38 +187,65 @@
             <p class="content">
                 Trong những trường hợp đặc biệt như khi chó Alaska nhà bạn bị bệnh hay đến thời kỳ chửa đẻ, việc chăm sóc lông cũng như các bộ phận khác cho chúng cũng trở nên phức tạp hơn đòi hỏi độ kiên nhẫn cao. Đó là ngoài việc tắm, chải và cắt tỉa lông bạn còn cần vệ sinh mọi ngóc ngách trên cơ thể chúng bao gồm kẽ chân, lỗ tai, mũi và lưỡi.
             </p>
+            <div class="box-comment">
+                <div class="col-6">
+                    <div class="comment">
+                        <p v-for="items in item" v-text="items"></p>
+                    </div><!--End Comment-->
+                </div><!--End col -->
+            </div><!-- End row -->
+            <div class="box-comment">
+                <div class="col-6">
+                    <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+                    <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+                </div><!-- End col -->
+            </div><!--End Row -->
         </div>
     </div>
 </section>
 <footer id="foodter" class="footer">
 
 </footer>
-
-<script src="./js/jquery-3.6.0.min.js"></script>
+<script src="../js/jquery-3.6.0.min.js"></script>
 <script src="../js/headerAndFooter.js" type="text/javascript"></script>
 
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
 <script src="./js/owl.carousel.min.js" type="text/javascript"></script>
-<script src="js/home-Mobal.js" type="text/javascript"></script>
+<script src="../js/home-Mobal.js" type="text/javascript"></script>
+
+<!-- Vue JS -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js'></script>
+<!-- jQuery -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+
 <script >
-    $('.owl-carousel').owlCarousel({
-        loop:true,
-        margin:10,
-        nav:true,
-        responsive:{
-            0:{
-                items:1
-            },
-            600:{
-                items:3
-            },
-            1000:{
-                items:5
+
+
+
+    $(document).ready(function(){
+
+        $(".primaryContained").on('click', function(){
+            $(".comment").addClass("commentClicked");
+        });//end click
+        $("textarea").on('keyup.enter', function(){
+            $(".comment").addClass("commentClicked");
+        });//end keyup
+    });//End Function
+
+    new Vue({
+        el: "#app",
+        data:{
+            title: 'Add a comment',
+            newItem: '',
+            item: [],
+        },
+        methods:{
+            addItem  (){
+                this.item.push(this.newItem);
+                this.newItem = "";
             }
         }
-    });
-    $('#myModal').on('shown.bs.modal', function () {
-        $('#myInput').focus()
+
     });
 </script>
 </body>

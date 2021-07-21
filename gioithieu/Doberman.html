@@ -166,7 +166,7 @@
             <p class="content">
                 Ở Việt Nam, nếu bạn muốn mua chó lai sói thì sẽ gặp khá nhiều bất lợi. Thứ nhất là về sự đắt đỏ và nguy hiểm của giống chó này khiến cho nhiều người phải đắn đo khi mua. Thứ hai là về giống chó này cũng cần thích nghi với điều kiện thời tiết nhiệt đới ở Việt Nam nên việc chăm sóc sẽ khá khó khăn. Và cuối cùng là về hoạt động huấn luyện chúng đòi hỏi chuyên môn cao, trong khi ở Việt Nam các cơ sở huấn luyện chuyên môn giống chó lai sói này gần như rất ít. Giống chó nguy hiểm này bị cấm nuôi ở nhiều nơi còn ở Việt Nam thì Petroom chưa cập nhật được thông tin cấm, tuy nhiên bạn hãy nghĩ tới môi trường sống xung quanh như hàng xóm, gia đình, bạn bè có gặp trở ngại gì nếu bạn nuôi chó lai sói không nhé. Petroom tin rằng trước khi tìm kiếm địa chỉ mua chó lai sói, bạn có thể cân nhắc lại tất cả những vấn đề kể trên rồi hãy đưa ra quyết định.
             </p>
-            <img class="img-conten" src="https://petmaster.vn/petroom/wp-content/uploads/2020/03/mua-cho-lai-soi-o-dau.jpg">
+            <img class="dog-img" src="https://petmaster.vn/petroom/wp-content/uploads/2020/03/mua-cho-lai-soi-o-dau.jpg">
             <p class="content">
                 Các địa chỉ mua chó lai sói Wolf Hybrid tại Việt Nam hiện nay chưa phổ biến và mua chó lai sói giá rẻ gần như là điều bất khả thi. Petroom sẽ chú ý cập nhật ngay các thông tin địa chỉ mua chó lai sói tại Việt Nam ngay khi có để chia sẻ cùng bạn nhé!
             </p>
@@ -174,6 +174,19 @@
                 Vậy là trên đây Petroom đã cùng bạn khám phá những thông tin về chó lai sói - thế hệ chó lai được đánh giá là nguy hiểm bậc nhất hành tinh. Nếu bạn đọc còn bất kì câu hỏi hay thắc mắc nào khác thì đừng ngại bình luận bên dưới. Chúng tôi rất vui được giải đáp cho bạn.
             </p>
         </div>
+        <div class="box-comment">
+            <div class="col-6">
+                <div class="comment">
+                    <p v-for="items in item" v-text="items"></p>
+                </div><!--End Comment-->
+            </div><!--End col -->
+        </div><!-- End row -->
+        <div class="box-comment">
+            <div class="col-6">
+                <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+                <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+            </div><!-- End col -->
+        </div><!--End Row -->
     </div>
 </section>
 <footer id="foodter" class="footer">
@@ -185,25 +198,40 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
 <script src="./js/owl.carousel.min.js" type="text/javascript"></script>
 <script src="../js/home-Mobal.js" type="text/javascript"></script>
+
+<!-- Vue JS -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js'></script>
+<!-- jQuery -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+
 <script >
-    $('.owl-carousel').owlCarousel({
-        loop:true,
-        margin:10,
-        nav:true,
-        responsive:{
-            0:{
-                items:1
-            },
-            600:{
-                items:3
-            },
-            1000:{
-                items:5
+
+
+
+    $(document).ready(function(){
+
+        $(".primaryContained").on('click', function(){
+            $(".comment").addClass("commentClicked");
+        });//end click
+        $("textarea").on('keyup.enter', function(){
+            $(".comment").addClass("commentClicked");
+        });//end keyup
+    });//End Function
+
+    new Vue({
+        el: "#app",
+        data:{
+            title: 'Add a comment',
+            newItem: '',
+            item: [],
+        },
+        methods:{
+            addItem  (){
+                this.item.push(this.newItem);
+                this.newItem = "";
             }
         }
-    });
-    $('#myModal').on('shown.bs.modal', function () {
-        $('#myInput').focus()
+
     });
 </script>
 </body>
