@@ -43,7 +43,7 @@ function foodter() {
         "                </div>\n" +
         "                <div class=\"col-md-4\">\n" +
         "                    <h3>Contact Us</h3>\n" +
-        "                    <p>Call us : (+84) 24-7300-8855, (+84) 24-7300-8855 </p>\n" +
+        "                    <p>Call us : (+84) 24-7300-8855 </p>\n" +
         "                    <p>Email us : <a href=\"#\">demo@mail.com</a>, <a href=\"#\">fpt-aptech@mail.com</a></p>\n" +
         "                    <p>Walk in : Số 8, Tôn Thất Thuyết, Mỹ Đình, Từ Liêm, Hà Nội <br>590 Cách Mạng Tháng 8, Quận 3, TPHCM</p>\n" +
         "\n" +

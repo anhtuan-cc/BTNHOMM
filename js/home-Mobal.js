@@ -9,7 +9,7 @@ function myMobalBox(event) {
         "  </div>\n" +
         "</div>"
     document.getElementById('myMobal').innerHTML= mobalNode;
-
+console.log([event]);
 }
 
 
