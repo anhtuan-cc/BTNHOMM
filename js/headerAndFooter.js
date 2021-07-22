@@ -10,7 +10,7 @@ function header() {
         "                        <div class=\"col-md-4 right\">\n" +
         "                            <ul>\n" +
         "                                <li><a href=\"#\">Giới Thiệu</a></li>\n" +
-        "                                <li><a href=\"#\">Kinh Nghiệm</a></li>\n" +
+        "                                <li><a href=\"kinhnghiem.html\">Kinh Nghiệm</a></li>\n" +
         "                                <li><a href=\"tintuc.html\">Tin Tức</a></li>\n" +
         "                                <li><a href=\"trang_bi.html\">Trang Bị</a></li>\n" +
         "                            </ul>\n" +
