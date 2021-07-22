@@ -12,7 +12,7 @@ function header() {
         "                                <li><a href=\"#\">Giới Thiệu</a></li>\n" +
         "                                <li><a href=\"#\">Kinh Nghiệm</a></li>\n" +
         "                                <li><a href=\"tintuc.html\">Tin Tức</a></li>\n" +
-        "                                <li><a href=\"trangbi.html\">Trang Bị</a></li>\n" +
+        "                                <li><a href=\"trang_bi.html\">Trang Bị</a></li>\n" +
         "                            </ul>\n" +
         "                        </div>\n" +
         "                    </div>\n" +
